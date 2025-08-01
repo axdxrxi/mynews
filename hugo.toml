@@ -1,0 +1,19 @@
+baseURL = 'https://example.org/'
+languageCode = 'fr-fr'
+title = 'my news of the day'
+theme = "ananke"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.goldmark.parser]
+    autoHeadingID = true
+
+  [markup.goldmark.extensions]
+    typographer = true
+    table = true
+    linkify = true
+
