@@ -8,12 +8,12 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     env:
-      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}  # Injection de la clé API ici
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,7 +26,7 @@ jobs:
       - name: Run generation script
         run: python generate_article.py
 
-      - name: Commit and push article
+      - name: Commit and push
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
