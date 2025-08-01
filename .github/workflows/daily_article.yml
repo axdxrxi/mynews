@@ -8,6 +8,9 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+
     steps:
       - uses: actions/checkout@v4
 
@@ -19,15 +22,13 @@ jobs:
       - name: Install dependencies
         run: pip install requests python-slugify PyYAML
 
-      - name: 🔍 Debug MISTRAL_API_KEY
-        run: echo "MISTRAL_API_KEY is $MISTRAL_API_KEY"
-        env:
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+      - name: Vérification variable (log masqué)
+        run: |
+          echo "🔐 Variable MISTRAL_API_KEY chargée"
+          echo "Longueur clé : ${#MISTRAL_API_KEY}"
 
       - name: Run generation script
         run: python generate_article.py
-        env:
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
 
       - name: Commit and push
         run: |
