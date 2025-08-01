@@ -52,7 +52,7 @@ slug = slugify.slugify(topic)[:80] + "-" + today.strftime("%Y-%m-%d")
 filename = f"content/posts/{slug}.md"
 
 markdown = f"""---
-title: "{topic}"
+title: {topic}
 date: {today}
 draft: false
 ---
