@@ -3,9 +3,15 @@ import datetime
 import os
 import re
 import slugify
+import yaml
+import sys
 
-# Renseigne ici ta clé API Mistral :
-MISTRAL_API_KEY = "RxwuBh7NtTUH5vnSv8XYicmIVdUZyLnO"
+# Étape 0 : Lecture de la clé API depuis la variable d'environnement
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
+
+if not MISTRAL_API_KEY:
+    print("❌ Erreur : la clé API MISTRAL_API_KEY n'est pas définie dans les variables d'environnement.")
+    sys.exit(1)
 
 def call_mistral(prompt, model="mistral-small"):
     url = "https://api.mistral.ai/v1/chat/completions"
@@ -51,17 +57,16 @@ today = datetime.date.today()
 slug = slugify.slugify(topic)[:80] + "-" + today.strftime("%Y-%m-%d")
 filename = f"content/posts/{slug}.md"
 
-markdown = f"""---
-title: {topic}
-date: {today}
-draft: false
----
+front_matter = {
+    "title": topic,
+    "date": str(today),
+    "draft": False
+}
 
-{article_clean}
-"""
+markdown = "---\n" + yaml.safe_dump(front_matter, sort_keys=False).strip() + "\n---\n\n" + article_clean
 
 os.makedirs("content/posts", exist_ok=True)
-with open(filename, "w", encoding="utf-8-sig") as f:
+with open(filename, "w", encoding="utf-8") as f:
     f.write(markdown)
 
 print(f"✅ Article enregistré : {filename}")
