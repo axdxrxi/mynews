@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://example.org/</loc><lastmod>2025-08-01T00:00:00+00:00</lastmod></url><url><loc>https://example.org/posts/</loc><lastmod>2025-08-01T00:00:00+00:00</lastmod></url><url><loc>https://example.org/posts/unprecedented-the-global-impact-of-the-covid-19-pandemic-on-remote-work-and-educ-2025-08-01/</loc><lastmod>2025-08-01T00:00:00+00:00</lastmod></url><url><loc>https://example.org/categories/</loc></url><url><loc>https://example.org/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/unmasking-the-future-the-role-of-facial-recognition-in-a-post-pandemic-world-2025-08-01/</loc>
+    <lastmod>2025-08-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

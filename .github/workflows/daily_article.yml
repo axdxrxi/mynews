@@ -8,24 +8,30 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    env:
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+
     steps:
-      - uses: actions/checkout@v4
-      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          
-      - name: Install dependencies
-        run: pip install requests python-slugify
-        
-      - name: Run generation script
+
+      - name: Install Python dependencies
+        run: pip install requests python-slugify pyyaml
+
+      - name: Generate new article
+        working-directory: ./
         run: python generate_article.py
-        
-      - name: Commit and push
+
+      - name: Commit and push article
+        working-directory: ./
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -m "Auto-generated article [skip ci]" || echo "No changes to commit"
-          git push
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/posts/
+          git commit -m "📝 Auto-generated article $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git push origin HEAD:main

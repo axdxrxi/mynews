@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>my news of the day</title><link>https://example.org/</link><description>Recent content on my news of the day</description><generator>Hugo</generator><language>fr-fr</language><lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Unprecedented: The Global Impact of the COVID-19 Pandemic on Remote Work and Education</title><link>https://example.org/posts/unprecedented-the-global-impact-of-the-covid-19-pandemic-on-remote-work-and-educ-2025-08-01/</link><pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/unprecedented-the-global-impact-of-the-covid-19-pandemic-on-remote-work-and-educ-2025-08-01/</guid><description>&lt;p>Title: Unprecedented: The Global Impact of the COVID-19 Pandemic on Remote Work and Education&lt;/p>
-&lt;p>Introduction:
-The COVID-19 pandemic has brought about unprecedented changes in the way we live, work, and learn. With social distancing measures in place, remote work and education have become the new norm, affecting millions of people worldwide. In this article, we will explore the global impact of the COVID-19 pandemic on remote work and education.&lt;/p>
-&lt;p>Remote Work: A New Reality
-The shift to remote work has been rapid and widespread, with companies of all sizes and industries adopting work-from-home policies to ensure the safety of their employees. According to a recent Gartner survey, 88% of organizations worldwide have encouraged or required their employees to work from home due to the COVID-19 pandemic. This sudden transition has presented both challenges and opportunities for businesses and employees alike.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>my news of the day</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on my news of the day</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unmasking the Future: The Role of Facial Recognition in a Post-Pandemic World</title>
+      <link>http://localhost:1313/posts/unmasking-the-future-the-role-of-facial-recognition-in-a-post-pandemic-world-2025-08-01/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/unmasking-the-future-the-role-of-facial-recognition-in-a-post-pandemic-world-2025-08-01/</guid>
+      <description>&lt;p&gt;Title: Unmasking the Future: The Role of Facial Recognition in a Post-Pandemic World&lt;/p&gt;&#xA;&lt;p&gt;Introduction:&lt;/p&gt;&#xA;&lt;p&gt;The COVID-19 pandemic has brought about significant changes in the way we live, work, and interact with each other. With the widespread use of face masks, facial recognition technology has faced a major challenge in identifying individuals. However, as the world gradually moves towards a post-pandemic era, the role of facial recognition in various sectors is becoming increasingly important. In this article, we will explore the future of facial recognition technology and its potential impact on our daily lives.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
