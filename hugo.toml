@@ -1,7 +1,13 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://axdxrxi.github.io/mynews/'
 languageCode = 'fr-fr'
-title = 'my news of the day'
-theme = "ananke"
+title = 'My News of the Day'
+theme = 'ananke'
+enableRobotsTXT = true
+publishDir = 'public'
+
+[params]
+  # Optionnel : message d'accueil sur la page d'accueil
+  description = "Articles générés automatiquement chaque jour avec Mistral AI."
 
 [markup]
   defaultMarkdownHandler = "goldmark"
@@ -16,4 +22,3 @@ theme = "ananke"
     typographer = true
     table = true
     linkify = true
-
